@@ -73,6 +73,10 @@ Release Notes
 
 **unreleased**
 
+**v0.1.3**
+* Fixes issue #66 in commit 8cbb677d45f126987249e3845d63a1d86ff6f548
+* Fixes issue #67 in commit bee1b00ba0d3bd0b336d5af8053053a0a84c9d24
+
 **v0.1.2-dev**
 
 **v0.1.1**
