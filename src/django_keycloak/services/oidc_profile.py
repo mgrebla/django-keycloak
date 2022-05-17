@@ -248,7 +248,10 @@ def update_tokens(token_model, token_response, initiate_time):
 
     token_model.access_token = token_response['access_token']
     token_model.expires_before = expires_before
+    try:
     token_model.refresh_token = token_response['refresh_token']
+    except KeyError:
+        pass
     token_model.refresh_expires_before = refresh_expires_before
 
     token_model.save(update_fields=['access_token',
