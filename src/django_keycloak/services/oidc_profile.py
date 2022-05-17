@@ -216,6 +216,7 @@ def _update_or_create(client, token_response, initiate_time):
 
     token_object = client.openid_api_client.decode_token(
         token=token_response[token_response_key],
+        access_token=token_response['access_token'],
         key=client.realm.certs,
         algorithms=client.openid_api_client.well_known[
             'id_token_signing_alg_values_supported'],
